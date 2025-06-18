@@ -14,7 +14,7 @@ groq_api_key=st.text_input(label="Groq API Key",type="password")
 
 
 if not groq_api_key:
-    st.info("Please add your Groq APPI key to continue")
+    st.info("Please add your Groq API key to continue")
     st.stop()
 
 llm=ChatGroq(model="Gemma2-9b-It",groq_api_key=groq_api_key)
